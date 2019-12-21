@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet"href="assets/css/style.css"> 
+        <link rel="shortcut icon" href="assets/imag/logo.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap&subset=cyrillic" rel="stylesheet">
+        
+        
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        
+        <script src="assets/js/cod.js"></script>
+        <title>PetPaw</title>
+      
+    </head>
+    <body>
+        
+    <header class="header"> 
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo" ><a href="#glavnaya" onclick="kata()"> <img src="assets/imag/petpaw_logo2.png" id="png" > </a> </div>
+                
+                <nav class="nav">
+                    <a class="nav__link" href="#katalog" onclick="kata()">Каталог</a>
+                    <a class="nav__link" href="#otzivi">Отзывы</a>
+                    <a class="nav__link" href="#kontacti">Контакты</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+        
+    <div class="intro"> <a name="glavnaya"></a>
+        <div class ="Slides fade">
+        <img src = "assets/imag/big11.jpg" style="width: 100%" alt="">
+        <span>Фирменный магазин качественных <br />кормов для Ваших питомцев</span>
+        </div>
+        <div class ="Slides fade">
+        <img src = "assets/imag/dogdog.jpg" style="width: 100%" alt=""> 
+        <span>Ваш лучший друг <br />заслуживает лучшего питания</span>
+        </div>
+        <div class ="Slides fade">
+        <img src = "assets/imag/doggo.jpg" style="width: 100%" alt=""> 
+        <span>При покупке от 50 долларов <br />получите скидочную карту</span>
+        </div>
+        
+        <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a>
+        </div>
+             
+        <a name="katalog"></a>
+        
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        
+        <div class="drug">
+        <img src="assets/imag/mordacota1.png" alt="" id="kot">
+        </div>
+        
+        
+         
+        <section class="section" id="kata">
+            <div class="container">   
+                <div class="section__header">
+                    <h2 class="section__title">Каталог</h2> 
+                </div>
+                <div class="about">
+                    <div class="about__item">
+                        <a  onclick="kata__dog()">
+                        <div class="about__img">
+                            <img src="assets/imag/dog.jpg" width="100%" height="90%" alt="Корм для собак">
+                            
+                        </div>
+                        <a class="about__text" onclick="kata__dog()">Корм для собак</a>
+                        </a>
+                    </div>
+                    <div class="about__item">
+                        <a  onclick="kata__cat()">
+                        <div class="about__img">
+                            <img src="assets/imag/cat.jpg" width="100%" height="89%" alt="Корм для котов">
+                        </div>
+                        <div class="about__text" onclick="kata__cat()">Корм для котов</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container">
+                 <div class="about">
+                    <div class="about__item">
+                        <a  onclick="kata__fish()">
+                        <div class="about__img">
+                            <img src="assets/imag/fish.jpg" width="100%" height="90%" alt="Корм для аквариумных рыбок">
+                        </div>
+                        <div class="about__text" onclick="kata__fish()">Корм для аквариумных рыбок</div>
+                        </a>
+                    </div>
+                    <div class="about__item">
+                        <a  onclick="kata__bird()">
+                        <div class="about__img">
+                            <img src="assets/imag/parrot.jpg" width="100%" height="90%" alt="Корм для птиц">
+                        </div>
+                        <div class="about__text" onclick="kata__bird()">Корм для птиц</div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+            
+              <div class="container">
+                 <div class="about">
+                    <div class="about__item">
+                        <a  onclick="kata__rip()">
+                        <div class="about__img">
+                            <img src="assets/imag/lizard.jpg" width="100%" height="90%" alt="Корм для пресмыкающихся">
+                        </div>
+                        <div class="about__text" onclick="kata__rip()">Корм для пресмыкающихся</div>
+                        </a>
+                    </div>
+                    <div class="about__item">
+                        <a  onclick="kata__rabbit()">
+                        <div class="about__img">
+                            <img src="assets/imag/rabbit.jpg" width="100%" height="90%" alt="Корм для грызунов">
+                        </div>
+                        <div class="about__text" onclick="kata__rabbit()">Корм для грызунов</div>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            
+                   </section>
+            
+         <a name="otzivi"></a>
+            <div class="section">
+                <div class="container__2">
+                     
+            <div class="section__header">
+                    <h2 class="section__title">Отзывы</h2>
+            </div>
+                    
+                    <div class="reviews">
+                        <div class="reviews__item">
+                        <img class="rev_img " src="assets/imag/dogsmile.jpg" alt="" > 
+                        
+                        <div class="rev__title">Джонни</div>
+                        <div class="rev__text">Замечательный магазин. Лучшие вкусняшки хозяин приносит именно отсюда!</div>
+                        </div>
+                        
+                        <div class="reviews__item">
+                        <img class="rev_img " src="assets/imag/meuw.jpg" alt="" > 
+                        
+                        <div class="rev__title">Вейса</div>
+                        <div class="rev__text">Мне было тяжело угодить, пока хозяйка не нашла этот магазин.</div>
+                        </div>
+                        
+                        
+                        <div class="reviews__item">
+                        <img class="rev_img " src="assets/imag/hamster.jpg" alt="" > 
+                        
+                        <div class="rev__title">Мартин</div>
+                        <div class="rev__text">Лучший корм в городе. Однозначно.</div>
+                        </div>
+                        
+                    </div>
+                    
+                    <hr>
+                    
+                       <div class="reviews2">
+                        <div class="reviews__item">
+                        <img class="rev_img " src="assets/imag/fishve.jpg" alt="" > 
+                        
+                        <div class="rev__title">Мистер Буль</div>
+                        <div class="rev__text">Буль-буль-буль... Буль! Буль-буль!</div>
+                        </div>
+                        
+                        <div class="reviews__item">
+                        <img class="rev_img " src="assets/imag/parrotve.jpg" alt="" > 
+                        
+                        <div class="rev__title">Теша</div>
+                        <div class="rev__text">Моему обеду завидует даже Кеша! Если тоже хотите зависти соседей, советую этот магазин.</div>
+                        </div>
+                        
+                        
+                        <div class="reviews__item">
+                        <img class="rev_img " src="assets/imag/dogsnow.jpg" alt="" > 
+                        
+                        <div class="rev__title">Петти</div>
+                        <div class="rev__text">Мой человек всегда счастлив, принося отсюда мне подарки. Пока он счастлив - счастлив я.</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        
+        <a name="kontacti"></a>
+         <div class="container__2">
+                      <div class="con__header">
+                    <h2 class="con__title">Как с нами связаться</h2>
+            </div>
+            <div class="contact">
+
+                    <div class="con__text">ВАШ ЛУЧШИЙ ДРУГ ЗАСЛУЖИВАЕТ ЛУЧШЕГО ПИТАНИЯ! <br>
+                    PetPaw - магазин качественного корма для <br>
+                Ваших любимцев. Все продукты сделаны из<br>
+                    лучших и 100% натуральных ингридиентов.</div>
+                
+                <div class="con__text">НАШИ АДРЕСА: <br>
+                ул. Краснозвёздная д. 5 <br> 
+                ул. Свердлова д. 13 <br> 
+                пр. Независимости д. 87</div>
+                
+                
+                <div class="con__text"> ТЕЛЕФОНЫ: <br>
+                    +375-44-53-44-768 <br>
+                    +375-29-64-19-074 <br>
+                    +375-35-666-34-98
+                </div>
+                
+                 <div class="con__text"> ВРЕМЯ РАБОТЫ: <br>
+                     пн-пт: 9:00 - 21:00 <br>
+                     сб: 10:00 - 19:00 <br>
+                     вс: выходной
+                </div>
+                
+                 <div class="con__con"></div>
+    
+    
+             
+            </div>
+        </div>
+
+<script src="assets/js/drugndrop.js"></script>
+  <script src="assets/js/slide.js"></script>
+        <script src="assets/js/button.js"></script>
+    </body>
+</html>
